@@ -53,6 +53,8 @@ class PathOpView : View {
             path1.addCircle(200f, 200f, radius1, Direction.CW)
             path2.addCircle(400f, 400f, radius2, Direction.CW)
             path1.op(path2, ops)
+            path1.close()
+            path2.close()
             canvas.drawPath(path1, paint1)
 //            canvas.drawPath(path2, paint2)
         }

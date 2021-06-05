@@ -18,4 +18,9 @@
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:text="展示path的Op方法剪裁path"/>
+  <Button
+      android:id="@+id/btn_arcto"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="画弧线"/>
 </LinearLayout>
