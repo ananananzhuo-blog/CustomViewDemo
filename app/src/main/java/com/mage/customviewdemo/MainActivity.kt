@@ -12,5 +12,8 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.btn_base).setOnClickListener {
             startActivity(Intent(this,CustomViewActivity::class.java))
         }
+        findViewById<Button>(R.id.btn_pathop).setOnClickListener {
+            startActivity(Intent(this,PathOpActivity::class.java))
+        }
     }
 }
