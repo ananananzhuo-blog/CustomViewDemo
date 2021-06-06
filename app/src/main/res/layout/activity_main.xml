@@ -23,4 +23,9 @@
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:text="画弧线"/>
+  <Button
+      android:id="@+id/btn_filltype"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="FillType属性"/>
 </LinearLayout>

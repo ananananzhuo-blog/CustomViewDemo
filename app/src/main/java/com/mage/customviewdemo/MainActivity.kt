@@ -18,5 +18,8 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.btn_arcto).setOnClickListener {
             startActivity(Intent(this,ArcToActivity::class.java))
         }
+        findViewById<Button>(R.id.btn_filltype).setOnClickListener {
+            startActivity(Intent(this,FillTypeActivity::class.java))
+        }
     }
 }

@@ -38,7 +38,6 @@ class ArcToView : View {
             path.arcTo(ovalRectf, 0f, 120f)
             path.close()
             drawPath(path, paint)
-            Path.Op
         }
     }
 }
