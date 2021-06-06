@@ -4,11 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FillTypeActivity">
-    <com.mage.customviewdemo.FillTypeView
+    tools:context=".ui.PaintJoinActivity">
+    <com.mage.customviewdemo.view.PaintJoinView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        />
+        android:layout_height="match_parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

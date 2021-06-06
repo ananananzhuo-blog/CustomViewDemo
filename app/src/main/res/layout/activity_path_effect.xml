@@ -3,21 +3,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".PathOpActivity">
-    <com.mage.customviewdemo.PathOpView
-        android:background="#00f"
-        android:id="@+id/pathopview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+    android:layout_height="match_parent"
+    tools:context=".ui.PathEffectActivity">
     <SeekBar
-        android:id="@+id/seekbar"
+        android:id="@+id/seekbar_effect"
+        android:max="300"
+        android:min="10"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
-    <Button
-        android:id="@+id/btn_selectOps"
+    <com.mage.customviewdemo.view.PathEffectView
+        android:id="@+id/path_effect"
         android:layout_width="match_parent"
-        android:text="点击选自Ops"
-        android:layout_height="wrap_content"/>
+        android:background="#0f0"
+        android:layout_height="800dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
 </LinearLayout>

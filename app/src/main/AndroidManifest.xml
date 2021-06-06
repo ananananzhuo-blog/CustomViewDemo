@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CustomViewDemo">
-        <activity android:name=".CubictoActivity"></activity>
+        <activity android:name=".ui.GradientActivity"></activity>
+        <activity android:name=".ui.PathDashEffectActivity" />
+        <activity android:name=".ui.PathEffectActivity" />
+        <activity android:name=".ui.PaintStrokeMiterActivity" />
+        <activity android:name=".ui.PaintJoinActivity" />
+        <activity android:name=".CubictoActivity" />
         <activity android:name=".FillTypeActivity" />
         <activity android:name=".ArcToActivity" />
         <activity android:name=".PathOpActivity" />

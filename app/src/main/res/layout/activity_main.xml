@@ -8,28 +8,28 @@
     tools:context=".MainActivity">
 
   <Button
-      android:id="@+id/btn_base"
+      android:id="@+id/btn_paintjoin"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:text="展示二阶贝塞尔曲线"/>
+      android:text="Paint.setStrokeJoin"/>
   <Button
-      android:id="@+id/btn_cubicto"
+      android:id="@+id/btn_paint_setstrokemiter"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:text="展示三阶贝塞尔曲线"/>
+      android:text="Paint.setStrokeMiter"/>
   <Button
-      android:id="@+id/btn_pathop"
+      android:id="@+id/pathEffect"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:text="展示path的Op方法剪裁path"/>
+      android:text="Paint.setPathEffect"/>
   <Button
-      android:id="@+id/btn_arcto"
+      android:id="@+id/btn_pathdasheffect"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:text="画弧线"/>
+      android:text="Paint.setPathEffect使用虚线绘制"/>
   <Button
-      android:id="@+id/btn_filltype"
+      android:id="@+id/btn_gradient"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:text="FillType属性"/>
+      android:text="Paint.setShader设置渐变"/>
 </LinearLayout>

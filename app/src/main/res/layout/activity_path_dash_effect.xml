@@ -4,10 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CubictoActivity">
-    <com.mage.customviewdemo.CubicToView
+    tools:context=".ui.PathDashEffectActivity">
+    <com.mage.customviewdemo.view.PathDashEffectView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#0f0"
-        />
+        android:layout_height="match_parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
