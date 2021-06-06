@@ -2,22 +2,18 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".PathOpActivity">
-    <com.mage.customviewdemo.view.PathOpView
-        android:background="#00f"
-        android:id="@+id/pathopview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <SeekBar
-        android:id="@+id/seekbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+    tools:context=".PathMeasureActivity">
     <Button
-        android:id="@+id/btn_selectOps"
+        android:id="@+id/btn_startpathmeasure"
         android:layout_width="match_parent"
-        android:text="点击选自Ops"
+        android:text="开始动画"
         android:layout_height="wrap_content"/>
+    <com.mage.customviewdemo.view.view.PathMeasureView
+        android:id="@+id/pathmeasure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
 </LinearLayout>

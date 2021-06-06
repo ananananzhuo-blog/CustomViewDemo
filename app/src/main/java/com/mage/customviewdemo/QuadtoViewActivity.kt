@@ -7,7 +7,10 @@ import android.os.Bundle
 import android.util.AttributeSet
 import android.view.View
 
-class CustomViewActivity : AppCompatActivity() {
+/**
+ * 二阶贝塞尔曲线
+ */
+class QuadtoViewActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_custom_view)

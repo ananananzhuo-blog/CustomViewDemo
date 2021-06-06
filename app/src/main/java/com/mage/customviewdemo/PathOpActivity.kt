@@ -7,9 +7,10 @@ import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
+import com.mage.customviewdemo.view.PathOpView
 
 class PathOpActivity : AppCompatActivity() {
-    var pathView:PathOpView?=null
+    var pathView: PathOpView?=null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_path_op)

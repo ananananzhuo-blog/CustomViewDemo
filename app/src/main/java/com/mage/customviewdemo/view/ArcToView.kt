@@ -1,4 +1,4 @@
-package com.mage.customviewdemo
+package com.mage.customviewdemo.view
 
 import android.content.Context
 import android.graphics.*

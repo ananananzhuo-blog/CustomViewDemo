@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ArcToActivity">
-    <com.mage.customviewdemo.ArcToView
+    <com.mage.customviewdemo.view.ArcToView
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 </LinearLayout>
