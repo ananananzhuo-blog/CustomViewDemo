@@ -39,10 +39,12 @@ class QuadtoView : View {
         val sizeWidth = MeasureSpec.getSize(widthMeasureSpec)
         val sizeHeight = MeasureSpec.getSize(heightMeasureSpec)
         setMeasuredDimension(sizeWidth, sizeHeight)
-        end.x = measuredWidth - 30f
-        end.y = measuredHeight - 30f
-        control.x = measuredWidth / 2f - 50
-        control.y = measuredHeight / 2f + 50
+        start.x = sizeWidth * 0.3f
+        start.y = sizeHeight * 0.3f
+        end.x = measuredWidth * 0.7f
+        end.y = measuredHeight * 0.7f
+        control.x = measuredWidth * 0.5f + 30
+        control.y = measuredHeight * 0.5f + 30
     }
 
     override fun onDraw(canvas: Canvas?) {
@@ -57,7 +59,7 @@ class QuadtoView : View {
             path.close()
             drawPath(path, paint)
             paint.color = Color.YELLOW
-            drawCircle(control.x, control.y, 20f, paint)
+            drawCircle(control.x, control.y, 50f, paint)
             restore()
         }
     }
@@ -71,30 +73,25 @@ class QuadtoView : View {
             lastX = control.x
         }
         event?.let {
-            when (event.action) {
+            when (it.action) {
                 MotionEvent.ACTION_DOWN -> {
-                    if (abs(it.x - lastX) < 20 && abs(it.y - lastY) < 20) {
-                        lastX = event.x
-                        lastY = event.y
+                    if (abs(it.x - lastX) < 50 && abs(it.y - lastY) < 50) {
+                        lastX = it.x
+                        lastY = it.y
                         isDragging = true
                     }
-
                 }
                 MotionEvent.ACTION_MOVE -> {
                     if (isDragging) {
-                        control.x = control.x + (event.x - lastX)
-                        control.y = control.y + (event.y - lastY)
-                        postInvalidate()
+                        control.x = it.x
+                        control.y = it.y
+                        lastX = it.x
+                        lastY = it.y
+                        invalidate()
                     }
-
                 }
                 MotionEvent.ACTION_UP -> {
                     isDragging = false
-//                    if (isDragging) {
-//                        lastX = 0
-//                        lastY = 0
-//                        isDragging = false
-//                    }
 
                 }
             }

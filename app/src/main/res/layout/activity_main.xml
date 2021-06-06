@@ -11,8 +11,12 @@
       android:id="@+id/btn_base"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:text="展示基础控件"/>
-
+      android:text="展示二阶贝塞尔曲线"/>
+  <Button
+      android:id="@+id/btn_cubicto"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="展示三阶贝塞尔曲线"/>
   <Button
       android:id="@+id/btn_pathop"
       android:layout_width="match_parent"
