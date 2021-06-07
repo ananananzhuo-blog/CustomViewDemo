@@ -25,5 +25,11 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.btn_gradient).setOnClickListener {
             startActivity(Intent(this, GradientActivity::class.java))
         }
+        findViewById<Button>(R.id.btn_maskfilter).setOnClickListener {
+            startActivity(Intent(this, MaskFilterActivity::class.java))
+        }
+        findViewById<Button>(R.id.btn_textpath).setOnClickListener {
+            startActivity(Intent(this, TextPathActivity::class.java))
+        }
     }
 }

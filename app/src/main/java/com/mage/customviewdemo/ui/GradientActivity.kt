@@ -11,14 +11,14 @@ import com.mage.customviewdemo.R
 import com.mage.customviewdemo.view.GradientView
 
 class GradientActivity : AppCompatActivity() {
-    private var gradientView: GradientView?=null
-
+    private var gradientView: GradientView? = null
+    var btn: Button? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_gradient)
-         gradientView = findViewById<GradientView>(R.id.gradientview)
-        val btn = findViewById<Button>(R.id.btn_gradient1)
-        btn.setOnClickListener {
+        gradientView = findViewById<GradientView>(R.id.gradientview)
+        btn = findViewById<Button>(R.id.btn_gradient1)
+        btn?.setOnClickListener {
             showPop()
         }
     }
@@ -39,6 +39,7 @@ class GradientActivity : AppCompatActivity() {
             gradientView?.setShaderText(datas[position])
             pop.dismiss()
         }
+        pop.anchorView = btn
         pop.show()
 
     }

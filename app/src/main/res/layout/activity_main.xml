@@ -3,33 +3,49 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-  <Button
-      android:id="@+id/btn_paintjoin"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="Paint.setStrokeJoin"/>
-  <Button
-      android:id="@+id/btn_paint_setstrokemiter"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="Paint.setStrokeMiter"/>
-  <Button
-      android:id="@+id/pathEffect"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="Paint.setPathEffect"/>
-  <Button
-      android:id="@+id/btn_pathdasheffect"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="Paint.setPathEffect使用虚线绘制"/>
-  <Button
-      android:id="@+id/btn_gradient"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="Paint.setShader设置渐变"/>
+    <Button
+        android:id="@+id/btn_paintjoin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Paint.setStrokeJoin" />
+
+    <Button
+        android:id="@+id/btn_paint_setstrokemiter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Paint.setStrokeMiter" />
+
+    <Button
+        android:id="@+id/pathEffect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Paint.setPathEffect" />
+
+    <Button
+        android:id="@+id/btn_pathdasheffect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Paint.setPathEffect使用虚线绘制" />
+
+    <Button
+        android:id="@+id/btn_gradient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Paint.setShader设置渐变" />
+
+    <Button
+        android:id="@+id/btn_maskfilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Paint.setMaskFilter设置模糊模式" />
+
+    <Button
+        android:id="@+id/btn_textpath"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="textpath获取和绘制" />
 </LinearLayout>

@@ -5,6 +5,7 @@ import android.content.Context
 import android.graphics.*
 import android.util.AttributeSet
 import android.view.View
+import com.mage.customviewdemo.R
 
 /**
  * author  :mayong
@@ -58,16 +59,29 @@ class GradientView(context: Context?, attrs: AttributeSet?) : View(context, attr
                 )
             }
             "RadialGradient" -> {
-                RadialGradient(0f,0f,200f,Color.YELLOW,Color.RED,Shader.TileMode.CLAMP)
+                RadialGradient(0f, 0f, 200f, Color.WHITE, Color.RED, Shader.TileMode.CLAMP)
             }
             "SweepGradient" -> {
-                null
+                SweepGradient(0f, 0f, Color.WHITE, Color.RED)
             }
             "BitmapShader" -> {
-                null
+                var bitmap = BitmapFactory.decodeResource(
+                    resources,
+                    R.mipmap.head
+                ) //获取图片资源 转换成bitmap 对象
+                BitmapShader(bitmap, Shader.TileMode.REPEAT, Shader.TileMode.CLAMP);//设置 x,y  方向格式
+
             }
             "ComposeShader" -> {
-                null
+                ComposeShader(LinearGradient(
+                    -300f,
+                    -300f,
+                    300f,
+                    300f,
+                    Color.WHITE,
+                    Color.RED,
+                    Shader.TileMode.CLAMP
+                ),RadialGradient(0f, 0f, 200f, Color.WHITE, Color.RED, Shader.TileMode.CLAMP),PorterDuff.Mode.ADD)
             }
             else ->
                 null

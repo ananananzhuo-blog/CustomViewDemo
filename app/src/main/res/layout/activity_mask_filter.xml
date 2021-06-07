@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f00"
+    android:orientation="vertical"
+    tools:context=".ui.MaskFilterActivity">
+
+    <Button
+        android:id="@+id/btn_maskfilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="选择模糊选项" />
+
+    <com.mage.customviewdemo.view.MaskFilterView
+        android:id="@+id/maskfilterview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</LinearLayout>
