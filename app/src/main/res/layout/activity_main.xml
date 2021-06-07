@@ -8,28 +8,9 @@
     tools:context=".MainActivity">
 
   <Button
-      android:id="@+id/btn_base"
+      android:id="@+id/btn_canvas_rotation"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:text="展示二阶贝塞尔曲线"/>
-  <Button
-      android:id="@+id/btn_cubicto"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="展示三阶贝塞尔曲线"/>
-  <Button
-      android:id="@+id/btn_pathop"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="展示path的Op方法剪裁path"/>
-  <Button
-      android:id="@+id/btn_arcto"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="画弧线"/>
-  <Button
-      android:id="@+id/btn_filltype"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="FillType属性"/>
+      android:text="Canvas的旋转功能"/>
+
 </LinearLayout>

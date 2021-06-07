@@ -4,11 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FillTypeActivity">
-    <com.mage.customviewdemo.FillTypeView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+    tools:context=".ui.CanvasRotationActivity">
+
 </androidx.constraintlayout.widget.ConstraintLayout>

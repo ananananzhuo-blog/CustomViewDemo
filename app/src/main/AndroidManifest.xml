@@ -9,11 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CustomViewDemo">
-        <activity android:name=".CubictoActivity"></activity>
-        <activity android:name=".FillTypeActivity" />
-        <activity android:name=".ArcToActivity" />
-        <activity android:name=".PathOpActivity" />
-        <activity android:name=".QuadtoViewActivity" />
+        <activity android:name=".ui.CanvasRotationActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
