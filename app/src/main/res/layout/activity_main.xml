@@ -12,5 +12,25 @@
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:text="Canvas的旋转功能"/>
+  <Button
+      android:id="@+id/btn_canvas_drawlines"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="canvas一次绘制多条线"/>
+  <Button
+      android:id="@+id/btn_canvas_drawarc"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="绘制弧形"/>
+  <Button
+      android:id="@+id/btn_canvas_drawract"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="绘制矩形和圆角矩形"/>
 
+  <Button
+      android:id="@+id/btn_canvas_drawbitmap"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="绘制图片"/>
 </LinearLayout>

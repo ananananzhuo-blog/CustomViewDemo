@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CustomViewDemo">
-        <activity android:name=".ui.CanvasRotationActivity"></activity>
+        <activity android:name=".ui.DrawBitmapActivity"></activity>
+        <activity android:name=".ui.DrawRectActivity" />
+        <activity android:name=".ui.DrawArcActivity" />
+        <activity android:name=".ui.CanvasDrawLinesActivity" />
+        <activity android:name=".ui.CanvasRotationActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
